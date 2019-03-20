@@ -13,6 +13,7 @@ Tool to run python with a taylored environnment
 ## Setup
 Upon the first run it will try to generate a `pyrun.json` configuration file to run the python file 
 Should this step failed, you will have to create pyrun.json with this example:
+
 `
 {
 	"env": [ # will populate the environment variable with these values
