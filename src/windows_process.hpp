@@ -27,7 +27,7 @@ namespace xts
          return std::string(arg);
       }
 
-      std::system_error run_process(const std::filesystem::path& filename, const std::vector<std::string>& argv, const std::unordered_map<std::string, std::vector<std::string>>& env)
+      std::system_error run_process(std::filesystem::path filename, const std::vector<std::string>& argv, const std::unordered_map<std::string, std::vector<std::string>>& env)
       {
          std::memset(&si, 0, sizeof(si));
          std::memset(&pi, 0, sizeof(pi));

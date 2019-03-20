@@ -21,7 +21,7 @@ namespace xts
 
    class linux_process
    {
-      std::system_error run_process(const std::filesystem::path &filename, const std::vector<std::string> &argv, const std::unordered_map<std::string, std::vector<std::string>> &env)
+      std::system_error run_process(std::filesystem::path filename, const std::vector<std::string> &argv, const std::unordered_map<std::string, std::vector<std::string>> &env)
       {
          cpid = fork();
          if (cpid == -1)
@@ -30,8 +30,8 @@ namespace xts
          }
          if (cpid == 0)
          {
-            std::vector<const char *> arg;
-            arg.push_back(filename.c_str());
+            std::vector<char *> arg;
+            arg.push_back(const_cast<char *>(filename.c_str()));
             for (const auto &v : argv)
             {
                arg.push_back(v.c_str());
