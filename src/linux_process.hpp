@@ -12,6 +12,7 @@
 #include <sys/wait.h>
 #include <unistd.h>
 #include <system_error>
+#include <filesystem>
 
 #include "environ.hpp"
 
