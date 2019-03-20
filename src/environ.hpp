@@ -7,6 +7,8 @@
 #include "linux_environ.hpp"
 #endif // WIN32
 
+#include <algorithm>
+
 namespace xts::env
 {
    inline std::unordered_map<std::string, std::vector<std::string>> merge_environ(
