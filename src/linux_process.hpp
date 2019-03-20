@@ -30,7 +30,7 @@ namespace xts
          }
          if (cpid == 0)
          {
-            std::vector<char *> arg;
+            std::vector<const char *> arg;
             arg.push_back(filename.c_str());
             for (const auto &v : argv)
             {
