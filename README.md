@@ -6,7 +6,8 @@ Tool to run python with a taylored environnment
 
 ## Dependency
 * All included in repository.
-* Linux compatibility not done yet
+* Works fine on windows
+* Linux testing not done yet
 * Require C++17 or newer
 * Require cmake 3.11 or newer
 
