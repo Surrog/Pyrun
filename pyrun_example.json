@@ -1,0 +1,25 @@
+{
+	"env": [
+		{
+			"base_path" : "C:\\python27\\",
+			"directory" : 
+			[
+				"."
+			],
+			"var" : "PYTHONHOME"
+		},
+		{
+			"base_path" : "C:\\python27\\",
+			"directory" : 
+			[
+				"",
+				".\\DLLs"
+			],
+			"var" : "PATH"
+		}	
+	],
+	"python": "C:\\python27\\python.exe",
+	"includes": [
+		"S:\\src\\my_repository"
+	]
+}
