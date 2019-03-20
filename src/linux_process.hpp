@@ -26,7 +26,7 @@ namespace xts
          cpid = fork();
          if (cpid == -1)
          {
-            return std::system_error(std::make_error_code(std::errc(std::errno)));
+            return std::system_error(std::make_error_code(std::errc(errno)));
          }
          if (cpid == 0)
          {
