@@ -58,7 +58,7 @@ Should this step failed, you will have to create pyrun.json with this example:
 	],
 	"python": ".\\build\\msvc15-x86\\Release\\python27\\bin\\python.exe", # path to a valid python executable
 	"includes": [ # allow pyrun to also search in these directory to find py file to execute 
-		"S:\\src\\buildTools" 
+		"" 
 	]
 }
 ` 
