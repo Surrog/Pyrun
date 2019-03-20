@@ -74,7 +74,7 @@ namespace xts
          int status;
          bool result = ::waitpid(cpid, &status, 0) >= 0;
          if (result)
-            atached = false;
+            attached = false;
          return result;
       }
 
