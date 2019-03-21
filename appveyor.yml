@@ -1,0 +1,16 @@
+image:
+- Visual Studio 2017
+clone_folder: C:\project\pyrun
+build_script:
+- cmd: >-
+    mkdir build
+
+    cd build
+    
+    cmake C:\project\pyrun -G "Visual Studio 15"
+    
+    cmake --build .
+
+    cmake --build . --config Release
+
+
