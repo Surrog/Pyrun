@@ -32,6 +32,10 @@ if (CMAKE_COMPILER_IS_GNUCC AND CMAKE_CXX_COMPILER_VERSION VERSION_LESS 9.1) #ad
 	target_link_libraries(pyrun stdc++fs)
 endif()
 
+if (UNIX)
+	target_link_libraries(pyrun dl)
+endif()
+
 target_include_directories(pyrun PRIVATE "${PROJECT_SOURCE_DIR}/jsoncpp/dist")
 target_include_directories(pyrun PRIVATE "${SOURCE_DIR}")
 
