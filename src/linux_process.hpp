@@ -40,7 +40,7 @@ namespace xts
 
             if (xts::env::set_current_environ(env))
             {
-               auto exec_error = execve(filename.c_str(), arg.data(), nullptr);
+               auto exec_error = execve(filename.c_str(), const_cast<char* const*>(arg.data()), nullptr);
                perror("execve");
                exit(EXIT_FAILURE);
             }
