@@ -9,8 +9,8 @@ build_script:
     
     cmake C:\project\pyrun -G "Visual Studio 15"
     
-    cmake --build .
-
     cmake --build . --config Release
+
+    cmake --build . --config Debug
 
 
