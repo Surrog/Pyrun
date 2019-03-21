@@ -24,8 +24,14 @@ set (SOURCES
 		${JSONCPP_DIR}/dist/json/json.h
 		${JSONCPP_DIR}/dist/json/json-forwards.h
 		)
-		
+
+
 add_executable(pyrun ${SOURCES})
+
+if (CMAKE_COMPILER_IS_GNUCC AND CMAKE_CXX_COMPILER_VERSION VERSION_LESS 9.1) #added to support old travis gcc-8
+	target_link_libraries(pyrun stdc++fs)
+endif()
+
 target_include_directories(pyrun PRIVATE "${PROJECT_SOURCE_DIR}/jsoncpp/dist")
 target_include_directories(pyrun PRIVATE "${SOURCE_DIR}")
 
