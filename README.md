@@ -2,7 +2,11 @@
 
 ## Goal
 
-Tool to run python with a taylored environnment
+Tool to run python with a taylored environnment & allow to debug in c++ lib loaded through the python script. 
+
+Linux build status: [![Build Status](https://travis-ci.org/Surrog/Pyrun.svg?branch=master)](https://travis-ci.org/Surrog/Pyrun)
+
+Windows build status: [![Build status](https://ci.appveyor.com/api/projects/status/3a1nt005dxcv553u?svg=true)](https://ci.appveyor.com/project/Surrog/pyrun)
 
 ## Dependency
 * All included in repository.
