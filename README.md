@@ -8,7 +8,7 @@ Linux build status: [![Build Status](https://travis-ci.org/Surrog/Pyrun.svg?bran
 
 Windows build status: [![Build status](https://ci.appveyor.com/api/projects/status/3a1nt005dxcv553u?svg=true)](https://ci.appveyor.com/project/Surrog/pyrun)
 
-## Dependency
+## Information
 * All included in repository.
 * Works fine on windows
 * Linux testing not done yet
