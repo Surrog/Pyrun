@@ -24,4 +24,5 @@ script:
   - mkdir bin
   - cd bin/
   - cmake ..
-  - scan-build cmake --build . -- -j2
+  - scan-build cmake --build . --config Release
+  - scan-build cmake --build . --config Debug
