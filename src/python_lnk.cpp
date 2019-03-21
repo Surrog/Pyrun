@@ -100,7 +100,7 @@ bool python_lnk::load_lib_linux()
    dll_handle = dlopen(python_dll.c_str(), RTLD_NOW);
    if (dll_handle != nullptr)
    {
-      python_main_bind = (pythob_main_type)dlsym(dll_handle, "Py_Main");
+      python_main_bind = (python_main_type)dlsym(dll_handle, "Py_Main");
       python_PyHome_bind = (python_setPyHome_type)dlsym(dll_handle, "Py_SetPythonHome");
    }
    return python_main_bind != nullptr && python_PyHome_bind != nullptr;
