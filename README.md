@@ -19,9 +19,9 @@ Windows build status: [![Build status](https://ci.appveyor.com/api/projects/stat
 Upon the first run it will try to generate a `pyrun.json` configuration file to run the python file 
 Should this step failed, you will have to create pyrun.json with this example:
 
-`
+```
 {
-	"env": [ # will populate the environment variable with these values
+        "env": [ # will populate the environment variable with these values
 		{
 			"base_path": ".\\build\\msvc15-x86\\Release", # non absolute base_path are concatenated with the path to config  
 			"var": "PATH", 								  # in this way  "config_directory"/"base_path"/"directory" 
@@ -66,7 +66,7 @@ Should this step failed, you will have to create pyrun.json with this example:
 		"" 
 	]
 }
-` 
+``` 
 
 ## Usage
 `pyrun <python script>`
